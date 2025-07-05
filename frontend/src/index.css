@@ -1,0 +1,353 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fcd5ce, #d0f4de);
+  min-height: 100vh;
+  padding: 0 20px;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 16px 16px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(to right, #3a3a52, #5f5f79);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  background: #ffcad4;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background: #f4acb7;
+  transform: translateY(-2px);
+}
+
+.user-email {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logout-btn {
+  margin-left: 10px;
+  padding: 8px 14px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e63946;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 480px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.form-container h2,
+.form-container h3 {
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+/* Input Fields */
+.form-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fef6ff;
+}
+
+.form-box input:focus {
+  border-color: #cdb4db;
+  outline: none;
+  background-color: #fff0f6;
+}
+
+/* Buttons */
+.form-box button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background: linear-gradient(to right, #b5ead7, #ffdac1);
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-box button:hover {
+  background: linear-gradient(to right, #ffb5a7, #cdb4db);
+  transform: scale(1.02);
+}
+
+/* Expense List */
+.expense-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.expense-list li {
+  background: #fff;
+  margin-bottom: 14px;
+  padding: 16px;
+  border-left: 6px solid #cdb4db;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Home Section */
+.home-container {
+  padding: 30px 20px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 42px;
+  color: #333;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Section */
+.feature-section {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature-card {
+  width: 260px;
+  padding: 20px;
+  margin: 15px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .form-container {
+    margin: 30px 10px;
+    padding: 25px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+  }
+}
+/* Expense Section Heading */
+.expenses-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3e3e3e;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Expense List Items */
+.expense-list li {
+  position: relative;
+  padding-right: 140px; /* Space for buttons */
+}
+
+/* Edit & Delete Buttons Wrapper */
+.expense-buttons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #c3f0ca;
+  color: #2d6a4f;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #95d5b2;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #ffd6d6;
+  color: #d62828;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ffadad;
+}
